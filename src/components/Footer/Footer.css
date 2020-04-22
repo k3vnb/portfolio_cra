@@ -1,0 +1,17 @@
+.footer__container {
+  position: relative;
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+  text-shadow: -.5px .5px 1px black;
+}
+/* .copy-to-clipboard:hover {
+  cursor: pointer;
+} */
+@media screen and (max-width: 430px){
+  .display-none-sm-scrn {
+    display: none;
+  }
+  .footer-left {
+    font-size: .9em;
+  }
+}
