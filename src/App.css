@@ -2,3 +2,14 @@
   width: 100vw;
   position: relative
 }
+
+.full {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container--centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

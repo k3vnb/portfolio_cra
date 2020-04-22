@@ -1,6 +1,6 @@
 import React from 'react';
-import LandingPage from './LandingPage';
-import Footer from './Footer';
+import LandingPage from './components/LandingPage/LandingPage';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {

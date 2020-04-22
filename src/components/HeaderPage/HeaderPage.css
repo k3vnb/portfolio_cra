@@ -1,0 +1,58 @@
+.header-and-nav {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.wallpaper {
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg), url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-y;
+  background-size: cover, 25%;
+  background-position: bottom, 50% 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -525px;
+}
+.background-img-tiles {
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
+  background-size: 25%;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.background-img {
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
+  background-size: 10%;
+  background-position: center;
+  opacity: 0.1;
+  animation: opacity-change 1.5s ease-in;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+}
+@keyframes opacity-change {
+  0% {
+    opacity: 0.5;
+    background-size: 33%;
+  }
+
+  100% {
+    opacity: 0.1;
+    background-size: 10%;
+  }
+}
+.header-overlay {
+  background: linear-gradient(
+      217deg,
+      rgba(33, 150, 243, 0.33),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(145deg, rgba(0, 67, 255, 0), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(161, 170, 197, 0), rgba(0, 0, 255, 0) 70.71%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
