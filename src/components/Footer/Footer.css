@@ -1,8 +1,12 @@
 .footer__container {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   color: white;
   font-family: 'Didact Gothic', sans-serif;
   text-shadow: -.5px .5px 1px black;
+  display: flex;
+  justify-content: space-between;
 }
 /* .copy-to-clipboard:hover {
   cursor: pointer;

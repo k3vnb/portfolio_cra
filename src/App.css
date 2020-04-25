@@ -1,5 +1,6 @@
 .App {
   width: 100vw;
+  min-height: 200vh;
   position: relative
 }
 
@@ -12,4 +13,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-container {
+  /* margin: 2% 16%; */
+  padding: 8%;
+  background-color: white;
+  height: 200px;
+}
+@media screen and (max-width: 500px){
+  /* .main-container {
+    margin: 3% 8%;
+  } */
+  .hide-sm-screen {
+    display: none;
+  }
 }

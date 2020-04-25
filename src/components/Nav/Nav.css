@@ -1,0 +1,114 @@
+.topbar {
+  position: fixed;
+  top: -0.5%;
+  left: 0%;
+  width: 100%;
+  background-color: white;
+  border-bottom: 0.5px solid #ffa90e8c;
+  height: 7.8vh;
+}
+.topbar-links-container-off {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  animation: become-transparent 0.2s;
+  margin-left: 5%;
+}
+.topbar-links-container-on {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: become-opaque 2s;
+  margin-left: 5%;
+}
+.nav-links-right {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin-left: 5%;
+}
+.nav-link-underline {
+  border-bottom: 1px solid #d8783f63;
+  animation: 1s underline ease-in;
+}
+.nav-link-reverse-underline {
+  border-bottom: 0px solid #d8783f63;
+  animation: 0.5s reverse-underline ease-in;
+}
+
+@keyframes underline {
+  from {
+    border-bottom: 0px solid #d8783f63;
+  }
+  to {
+    border-bottom: 1px solid #d8783f63;
+  }
+}
+
+@keyframes reverse-underline {
+  from {
+    border-bottom: 1px solid #d8783f63;
+  }
+  to {
+    border-bottom: 0px solid #d8783f63;
+  }
+}
+.nav-link-topbar {
+  color: #4c4943;
+  font-family: "Carrois Gothic SC", sans-serif;
+  font-size: 2vw;
+  transition: text-shadow 0.1s;
+}
+.nav-link-topbar:hover {
+  cursor: pointer;
+  transform: scale(1.015);
+  text-shadow: 0.5px 0.5px 0px #0202029c;
+}
+.nav-link-topbar:active {
+  transform: scale(1.025);
+  text-shadow: 0px 1px 5px #ffee0087;
+}
+.self-portrait {
+  max-height: 7.1vh;
+  object-fit: contain;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  transition: 0.6s transform ease-out;
+}
+.self-portrait:hover {
+  transform: rotateY(180deg);
+}
+.self-portrait:active {
+  transform: rotateX(180deg);
+}
+
+@keyframes become-opaque {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes become-transparent {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-link-topbar {
+    font-size: 16px;
+  }
+  .nav-links-right {
+    width: 65%;
+  }
+}
