@@ -1,7 +1,7 @@
 .header-and-nav {
   height: 100vh;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 .wallpaper {
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg), url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
@@ -54,5 +54,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 5;
 }

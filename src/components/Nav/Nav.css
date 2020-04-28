@@ -1,11 +1,12 @@
 .topbar {
   position: fixed;
-  top: -0.5%;
-  left: 0%;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   background-color: white;
   border-bottom: 0.5px solid #ffa90e8c;
   height: 7.8vh;
+  z-index: 3;
 }
 .topbar-links-container-off {
   height: 100%;

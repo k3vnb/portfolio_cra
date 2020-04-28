@@ -76,9 +76,6 @@
 @media screen and (max-width: 420px) {
   .header__container {
     width: 87%;
-    height: 72vh;
-    margin: auto;
-    margin-top: -10%;
   }
   .header__link-container {
     flex-direction: column;
