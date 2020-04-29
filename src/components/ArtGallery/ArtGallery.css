@@ -1,0 +1,37 @@
+.illustration-gallery {
+  width: 92%;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  color: white;
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg);
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 44vh;
+  border: 2px solid #00000078;
+}
+.gallery-overlay {
+  padding: 1% 1% 5%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 1, 2, 0.79) 0%,
+    rgba(177, 0, 255, 0.53) 100%
+  );
+}
+.illustration-gallery h2 {
+  margin: 0% 0% 5% 5%;
+  text-shadow: 1px 1px 1px #00000082;
+  z-index: 2;
+  font-size: 42px;
+}
+.illustration-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 2;
+}
