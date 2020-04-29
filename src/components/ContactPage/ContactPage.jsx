@@ -4,10 +4,8 @@ import "./ContactPage.css";
 
 function Contact() {
   return (
-    <div>
-      <div className="before-contact">
-        <ContactBanner />
-      </div>
+    <>
+      <ContactBanner />
       <div className="contact-container">
         <div className="contact-page-inner">
           <div className="contact-box contact-top-left">
@@ -60,7 +58,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
