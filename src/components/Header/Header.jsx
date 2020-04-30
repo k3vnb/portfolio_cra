@@ -1,20 +1,8 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
-import ParalaxCache from "../ParallaxCache/ParallaxCache";
+// import { Parallax } from "react-scroll-parallax";
+// import ParalaxCache from "../ParallaxCache/ParallaxCache";
+import scrollToPage from "../../utils";
 import "./Header.css";
-
-const scrollToPage = (pageSelector) => {
-  const goToPage = document.querySelector(pageSelector);
-  const toElement = (element) => {
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-  toElement(goToPage);
-};
 
 const Header = () => {
   const handleOnKeyDown = (e, goTo) => {

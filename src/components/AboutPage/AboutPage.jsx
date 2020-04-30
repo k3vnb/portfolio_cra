@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect, useContext } from "react";
+import AppContext from "../../AppContext";
 import "./AboutPage.css";
 
 const skillsList = [
@@ -21,8 +22,24 @@ const skillsList = [
 ];
 
 const AboutPage = () => {
+  const { setOffsetTop } = useContext(AppContext);
+  const ref = useRef();
+
+  useEffect(() => {
+    const getElementOffsetTop = () => {
+      if (ref.current) {
+        setOffsetTop("about", ref.current.offsetTop);
+      }
+    };
+    getElementOffsetTop();
+    window.addEventListener("resize", getElementOffsetTop);
+    return () => {
+      window.removeEventListener("resize", getElementOffsetTop);
+    };
+  }, [setOffsetTop]);
+
   return (
-    <section className="about-container flex-container--centered">
+    <section className="about-container flex-container--centered" ref={ref}>
       <div style={{ width: "100vw" }}>
         <div className="about-upper">
           <div className="about-upper-half about-upper-left flex-container--centered">
@@ -30,9 +47,8 @@ const AboutPage = () => {
           </div>
           <div className="about-upper-half about-upper-right flex-container--centered">
             <p>
-              <span className="leader-text">Thank you</span> for visiting. I'm
-              Kevin from Portland, OR. I design & develop web apps, websites, and
-              user interfaces.
+              Thank you for visiting. I&apos;m Kevin from Portland, OR. I design
+              &amp; develop web apps, websites, and user interfaces.
             </p>
           </div>
         </div>
@@ -41,15 +57,15 @@ const AboutPage = () => {
             <span className="leader-text2">
               Coding is my trade and vehicle for life-long learning.
             </span>
-            &nbsp;As a programmer, I aim for clean, efficient, maintainable code.
-            As a web developer, I aim to deliver inviting and intuitive virtual
-            spaces with user-friendly applications.
+            &nbsp;As a programmer, I aim for clean, efficient, maintainable
+            code. As a web developer, I aim to deliver inviting and intuitive
+            virtual spaces with user-friendly applications.
           </p>
           <p>
-            My background is in cultural anthropology. I am an artist, innovator,
-            creative thinker, and problem solver. Much of my passion for
-            programming comes from my interest in the intersection of art and
-            technology.
+            My background is in cultural anthropology. I am an artist,
+            innovator, creative thinker, and problem solver. Much of my passion
+            for programming comes from my interest in the intersection of art
+            and technology.
           </p>
           <p className="leader-text2">My toolkit includes:</p>
           <ul className="skills-list ul-reset">
@@ -58,7 +74,6 @@ const AboutPage = () => {
             ))}
           </ul>
         </div>
-
       </div>
     </section>
   );

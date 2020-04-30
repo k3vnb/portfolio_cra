@@ -24,3 +24,9 @@ html {
   padding: 0;
   margin: 0;
 }
+.button-reset {
+  all: unset;
+}
+.button-reset:focus {
+  outline: none;
+}
