@@ -40,9 +40,9 @@ export const projectsData = [
   {
     title: "NomsPDX",
     description:
-      "What's the best burger in Portland? Best Sushi? Best Pizza? This full stack app let's users vote and comment on their favorite food places in Portland.",
+      "What's the best burger in Portland? Best Sushi? Best Pizza? This web app let's users vote and comment on their favorite food places in Portland.",
     techStack:
-      "A fullstack web app. This project utilizes the PERN stack (Postgres, Express, React, Node), Google OAuth & Places API, Material-UI, etc",
+      "A fullstack web app. This project utilizes the PERN stack (Postgres, Express, React, Node), Google OAuth & Places API, Material-UI, etc.",
     imageURL:
       "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_65,w_348/v1588057214/Portfolio/NomsPDX.png",
     webpageURL: "https://nomspdx.com/",
@@ -50,9 +50,9 @@ export const projectsData = [
   },
   {
     title: "PDX Dashboard",
-    description: "News, Events, and Information for Portland, OR",
+    description: "News, Events, and Information for Portland, OR.",
     techStack:
-      "Client-side jQuery produced page pulling real-time API information.",
+      "Client-side jQuery produced page pulling real-time API information. The background image, for example, is automatically generated from a keyword in the day's weather forecast.",
     imageURL:
       "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_35,w_375/v1588057465/Portfolio/PDXDashboard.png",
     webpageURL: "https://lemurriot.github.io/pdx_dashboard/",
@@ -60,8 +60,10 @@ export const projectsData = [
   },
   {
     title: "Sieve Jobs",
-    description: "Job Interview preparation flash-card app.",
-    techStack: "Client-side React app with custom Webpack build",
+    description:
+      "This job interview preparation flash-card app sends users common job interview questions. Users can type in replies, get hints and tips.",
+    techStack:
+      "Client-side React app w/ custom Webpack build, CSS animations, & local storage persistence.  This app is currently being updated to contain full stack capabilities.",
     imageURL:
       "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_47,w_365/v1588057480/Portfolio/sieve-jobs1.png",
     webpageURL: "https://sieve-jobs.herokuapp.com/",

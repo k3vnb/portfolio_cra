@@ -1,4 +1,5 @@
 import React from "react";
+import { string } from "prop-types";
 import "./WebProjectCard.css";
 
 const WebProjectCard = ({
@@ -11,15 +12,51 @@ const WebProjectCard = ({
 }) => {
   return (
     <article className="card">
-      <img className="card__thumbnail" src={imageURL} alt={title} />
-      <h4 className="card__title">{title}</h4>
-      <p className="card__description">{description}</p>
-      <p className="card__second-description">{techStack}</p>
-      <a className="card__a" href={webpageURL}>{webpageURL}</a>
-      <br />
-      <a className="card__b" href={githubURL}>{githubURL}</a>
+      <div className="card--top">
+        <img src={imageURL} alt={title} />
+      </div>
+      <div className="card--bottom">
+        <h4 className="card__title">{title}</h4>
+        <div className="card--bottom__content">
+          <p className="card__description">{description}</p>
+          <p className="card__second-description">{techStack}</p>
+        </div>
+        <div className="card__links-container">
+          <div className="card__link-container">
+            <h5>Hosted Site:</h5>
+            <a
+              className="card__link"
+              href={webpageURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {webpageURL}
+            </a>
+          </div>
+          <div className="card__link-container">
+            <h5>Code Repository:</h5>
+            <a
+              className="card__link"
+              href={githubURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {githubURL}
+            </a>
+          </div>
+        </div>
+      </div>
     </article>
   );
 };
+
+WebProjectCard.propTypes = {
+  title: string.isRequired,
+  description: string.isRequired,
+  techStack: string.isRequired,
+  imageURL: string.isRequired,
+  webpageURL: string.isRequired,
+  githubURL: string.isRequired,
+}
 
 export default WebProjectCard;

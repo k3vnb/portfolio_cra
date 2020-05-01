@@ -40,10 +40,10 @@ const AboutPage = () => {
 
   return (
     <section className="about-container flex-container--centered" ref={ref}>
-      <div style={{ width: "100vw" }}>
+      <article style={{ width: "100vw" }}>
         <div className="about-upper">
           <div className="about-upper-half about-upper-left flex-container--centered">
-            <h2 className="hi">Hi</h2>
+            <span className="hi">Hi</span>
           </div>
           <div className="about-upper-half about-upper-right flex-container--centered">
             <p>
@@ -74,7 +74,7 @@ const AboutPage = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </article>
     </section>
   );
 };
