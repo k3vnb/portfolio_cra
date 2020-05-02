@@ -53,11 +53,11 @@
 .nav__link--highlighted {
   background-color: #fe7f01;
   color: white;
-  animation: 1.1s highlight ease-in;
+  animation: .8s highlight ease-in;
 }
 .nav__link--reverse-highlighted {
   background-color: white;
-  animation: 1s reverse-highlight ease-out;
+  animation: .7s reverse-highlight ease-out;
 }
 
 @media screen and (max-width: 500px) {
