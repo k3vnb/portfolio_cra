@@ -16,12 +16,12 @@ export const galleryList = [
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059371/Portfolio/BirdBath.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588393031/Portfolio/BirdBath.svg",
     imageTitle: "BirdBath",
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059372/Portfolio/CampMate.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588393162/Portfolio/campbear.svg",
     imageTitle: "Camp Mate",
   },
   {

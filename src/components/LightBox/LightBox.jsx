@@ -5,18 +5,18 @@ import "./LightBox.css";
 const LightBox = ({ imageData, toggleShowLightBox, onClickNext }) => {
   const { imageURL, imageTitle } = imageData;
   return (
-    <div className="lightbox">
+    <div className="lightbox flex-container--centered">
       <button
         type="button"
-        className="close-button flex-container--centered lightbox-button"
+        className="lightbox__close-button flex-container--centered lightbox__button"
         onClick={toggleShowLightBox}
       >
         &times;
       </button>
-      <img className="lightbox-image" src={imageURL} alt={imageTitle} />
+      <img className="lightbox__image" src={imageURL} alt={imageTitle} />
       <button
         type="button"
-        className="next-button flex-container--centered lightbox-button"
+        className="lightbox__next-button flex-container--centered lightbox__button"
         onClick={onClickNext}
       >
         Next
