@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import LandingPage from "./components/LandingPage/LandingPage";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import AppContext from "./AppContext";
@@ -9,6 +10,7 @@ const App = () => {
   const [aboutOffsetTop, setAboutOffsetTop] = useState(null);
   const [projectsOffsetTop, setProjectsOffsetTop] = useState(null);
   const [contactOffsetTop, setContactOffsetTop] = useState(null);
+  const [loadingState, setLoadingState] = useState(true);
 
   const ref = useRef();
 
@@ -34,6 +36,12 @@ const App = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+  useEffect(() => {
+    const handleLoad = () => setLoadingState(false);
+    window.addEventListener("load", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
   const contextVal = {
     appScrollTop: scrollTop,
     aboutOffsetTop,
@@ -44,6 +52,7 @@ const App = () => {
 
   return (
     <AppContext.Provider value={contextVal}>
+      {loadingState && <LoadingSpinner />}
       <div className="App" ref={ref}>
         <LandingPage />
         <Footer />
