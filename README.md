@@ -1,7 +1,8 @@
 # Personal Portfolio
 
 ## Description
-Static website for featuring personal info and projects
+Static website featuring personal info and projects
+This site is hosted at www.pdxwebdev.io
 
 ### Tech
-Standard Create React App stuff
+Create-React-App, custom made widgets (lightbox, scroll event listener for nav highlighting), vanilla css effects, parallax effects with react-scroll-parallax npm package.

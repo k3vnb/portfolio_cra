@@ -1,7 +1,7 @@
 export const galleryList = [
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588061161/Portfolio/walrus.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588443539/Portfolio/walrus.svg",
     imageTitle: "Walrus",
   },
   {
