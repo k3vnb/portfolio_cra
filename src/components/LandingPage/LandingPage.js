@@ -11,9 +11,11 @@ const LandingPage = () => (
     <Nav />
     <HeaderPage />
     <ParallaxProvider>
-      <AboutPage />
-      <ProjectsPage />
-      <ContactPage />
+      <main>
+        <AboutPage />
+        <ProjectsPage />
+        <ContactPage />
+      </main>
     </ParallaxProvider>
   </>
 );

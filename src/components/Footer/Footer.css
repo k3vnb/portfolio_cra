@@ -9,25 +9,17 @@
   justify-content: space-between;
 }
 .footer__section {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  padding: 0 2% 1%;
   font-weight: bold;
 }
 address {
   font-style: normal;
 }
-/* .copy-to-clipboard:hover {
-  cursor: pointer;
-} */
 @media screen and (max-width: 430px){
   .display-none-sm-scrn {
     display: none;
   }
-  .footer__section--left {
+  .footer__section--right {
     font-size: .9em;
   }
 }

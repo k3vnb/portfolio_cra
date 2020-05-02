@@ -20,18 +20,17 @@
   display: flex;
   justify-content: space-between;
   width: 35%;
+  min-width: 250px;
   margin-left: 5%;
 }
 .nav__link {
   color: #4c4943;
   padding: 2%;
   font-family: "Carrois Gothic SC", sans-serif;
-  font-size: 2vw;
   transition: text-shadow 0.1s;
 }
 .nav__link:hover {
   cursor: pointer;
-  /* transform: scale(1.015); */
   text-shadow: 0.5px 0.5px 0px #0202029c;
 }
 .nav__link:active {
@@ -67,6 +66,7 @@
   }
   .nav__links--right {
     width: 65%;
+    min-width: 200px;
   }
 }
 
