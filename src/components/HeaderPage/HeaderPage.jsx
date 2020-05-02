@@ -3,15 +3,15 @@ import Header from "../Header/Header";
 import "./HeaderPage.css";
 
 const HeaderPage = () => (
-  <div className="header-and-nav">
-    <div className="background-img-tiles full" />
-    <div className="wallpaper full">
-      <div className="background-img full" />
-      <div className="header-overlay full">
+  <section className="header-page">
+    <div className="header-page__background-tiles full" />
+    <div className="header-page__wallpaper full">
+      <div className="header-page__background-img full" />
+      <div className="header-page__header-overlay full">
         <Header />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default HeaderPage;

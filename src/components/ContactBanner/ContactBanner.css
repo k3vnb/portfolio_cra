@@ -1,20 +1,18 @@
-.contact-parallax-container1 {
+.contact-banner {
   height: 250px;
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg);
   background-repeat: repeat-y;
   background-size: cover;
   opacity: 0.85;
-}
-.contact-banner-container {
   position: relative;
 }
-.contact-banner {
+.contact-banner__image {
   height: 250px;
   width: 100%;
   opacity: 0.3;
   object-fit: cover;
 }
-.contact-title {
+.contact-banner__title {
   color: white;
   text-shadow: 1px 1px 1px #000000c2;
   font-family: "Didact Gothic", sans-serif;

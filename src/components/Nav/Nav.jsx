@@ -27,35 +27,26 @@ const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [appScrollTop, aboutOffsetTop, contactOffsetTop, projectsOffsetTop]);
   return (
-    <nav className="topbar">
-      <div
-        className="topbar-links-container-on"
-        // className={
-        //   this.state.navOpacityFull
-        //     ? "topbar-links-container-on"
-        //     : "topbar-links-container-off"
-        // }
-      >
-        <div>
-          <button
-            className="nav-link-topbar button-reset"
-            type="button"
-            onClick={() => scrollToPage(".App")}
-          >
-            <img
-              className="self-portrait"
-              src="https://res.cloudinary.com/kboyle/image/upload/v1587593766/Portfolio/logo.png"
-              alt="Kevin Boyle"
-              title="Back to Top"
-            />
-          </button>
-        </div>
-        <div className="nav-links-right">
+    <nav className="nav">
+      <div className="nav__inner">
+        <button
+          className="nav__link button-reset"
+          type="button"
+          onClick={() => scrollToPage(".App")}
+        >
+          <img
+            className="logo"
+            src="https://res.cloudinary.com/kboyle/image/upload/v1587593766/Portfolio/logo.png"
+            alt="Kevin Boyle"
+            title="Back to Top"
+          />
+        </button>
+        <div className="nav__links--right">
           <button
             className={
               elementInView === "about"
-                ? "nav-link-topbar button-reset nav-link-underline"
-                : "nav-link-topbar button-reset nav-link-reverse-underline"
+                ? "nav__link button-reset nav__link--highlighted"
+                : "nav__link button-reset nav__link--reverse-highlighted"
             }
             type="button"
             title="go to about section"
@@ -66,8 +57,8 @@ const Nav = () => {
           <button
             className={
               elementInView === "projects"
-                ? "nav-link-topbar button-reset nav-link-underline"
-                : "nav-link-topbar button-reset nav-link-reverse-underline"
+                ? "nav__link button-reset nav__link--highlighted"
+                : "nav__link button-reset nav__link--reverse-highlighted"
             }
             type="button"
             title="go to gallery section"
@@ -78,8 +69,8 @@ const Nav = () => {
           <button
             className={
               elementInView === "contact"
-                ? "nav-link-topbar button-reset nav-link-underline"
-                : "nav-link-topbar button-reset nav-link-reverse-underline"
+                ? "nav__link button-reset nav__link--highlighted"
+                : "nav__link button-reset nav__link--reverse-highlighted"
             }
             type="button"
             title="go to contact section"

@@ -1,6 +1,4 @@
 import React from "react";
-// import { Parallax } from "react-scroll-parallax";
-// import ParalaxCache from "../ParallaxCache/ParallaxCache";
 import scrollToPage from "../../utils";
 import "./Header.css";
 
@@ -11,8 +9,6 @@ const Header = () => {
     }
   };
   return (
-    // <ParalaxCache>
-    //   <Parallax className="parallax-container2" y={[0, 20]}>
     <header className="header__container">
       <h1 className="header__title">Kevin &nbsp;Boyle</h1>
       <h2 className="header__subtitle">Web Developer</h2>
@@ -49,8 +45,6 @@ const Header = () => {
         </div>
       </nav>
     </header>
-    //   </Parallax>
-    // </ParalaxCache>
   );
 };
 

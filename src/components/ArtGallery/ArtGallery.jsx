@@ -23,9 +23,9 @@ const ArtGallery = () => {
   };
   return (
     <div className="illustration-gallery">
-      <div className="gallery-overlay">
-        <h2>Sample &nbsp;Illustrations</h2>
-        <div className="illustration-container">
+      <div className="illustration-gallery__overlay">
+        <h3 className="illustration-gallery__title">Sample &nbsp;Illustrations</h3>
+        <div className="illustration-gallery__card-container">
           {galleryList.slice(0, 4).map(({ imageURL, imageTitle }, i) => (
             <ArtCard
               key={imageTitle}

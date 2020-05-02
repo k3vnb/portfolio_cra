@@ -1,4 +1,5 @@
 import React from "react";
+import { string, shape, func } from "prop-types";
 import "./LightBox.css";
 
 const LightBox = ({ imageData, toggleShowLightBox, onClickNext }) => {
@@ -22,6 +23,15 @@ const LightBox = ({ imageData, toggleShowLightBox, onClickNext }) => {
       </button>
     </div>
   );
+};
+
+LightBox.propTypes = {
+  imageData: shape({
+    imageURL: string.isRequired,
+    imageTitle: string.isRequired,
+  }).isRequired,
+  toggleShowLightBox: func.isRequired,
+  onClickNext: func.isRequired,
 };
 
 export default LightBox;

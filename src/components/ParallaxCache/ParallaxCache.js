@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from "react";
+import { node } from "prop-types";
 import { useController } from "react-scroll-parallax";
 
 const ParallaxCache = ({ children }) => {
@@ -12,5 +13,9 @@ const ParallaxCache = ({ children }) => {
 
   return <>{children}</>;
 };
+
+ParallaxCache.propTypes = {
+  children: node.isRequired,
+}
 
 export default ParallaxCache;

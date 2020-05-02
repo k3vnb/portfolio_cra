@@ -3,7 +3,7 @@ import AppContext from "../../AppContext";
 import ContactBanner from "../ContactBanner/ContactBanner";
 import "./ContactPage.css";
 
-function Contact() {
+const ContactPage = () => {
   const { setOffsetTop } = useContext(AppContext);
   const ref = useRef();
 
@@ -85,4 +85,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;

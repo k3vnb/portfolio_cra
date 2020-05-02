@@ -1,20 +1,17 @@
-.header-and-nav {
+.header-page {
   height: 100vh;
   position: relative;
   z-index: 4;
 }
-.wallpaper {
+.header-page__wallpaper {
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg), url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
-  height: 100%;
-  width: 100%;
   background-repeat: repeat-y;
   background-size: cover, 25%;
   background-position: bottom, 50% 50%;
-  position: -webkit-sticky;
   position: sticky;
   top: -525px;
 }
-.background-img-tiles {
+.header-page__background-tiles {
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
   background-size: 25%;
   background-position: 50% 50%;
@@ -22,28 +19,17 @@
   top: 0%;
   left: 0%;
 }
-.background-img {
+.header-page__background-img {
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537580/Portfolio/sky-bg.jpg);
   background-size: 10%;
   background-position: center;
   opacity: 0.1;
-  animation: opacity-change 1.5s ease-in;
   position: absolute;
   top: 0%;
   bottom: 0%;
+  animation: opacity-change 1.5s ease-in;
 }
-@keyframes opacity-change {
-  0% {
-    opacity: 0.5;
-    background-size: 33%;
-  }
-
-  100% {
-    opacity: 0.1;
-    background-size: 10%;
-  }
-}
-.header-overlay {
+.header-page__header-overlay {
   background: linear-gradient(
       217deg,
       rgba(33, 150, 243, 0.33),
@@ -55,4 +41,14 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
+}
+@keyframes opacity-change {
+  0% {
+    opacity: 0.5;
+    background-size: 33%;
+  }
+  100% {
+    opacity: 0.1;
+    background-size: 10%;
+  }
 }

@@ -1,15 +1,20 @@
 .card {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
-  border: .5px solid #afafaf;
+  border: 0.5px solid #afafaf;
   border-radius: 8px;
   width: 90vw;
   max-width: 370px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .card--top {
-  background-color: #afafaf;
+  background: rgb(0, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgb(252, 252, 252) 0%,
+    rgb(148, 148, 148) 100%
+  );
   border-radius: 8px 8px 0 0;
   display: flex;
   justify-content: center;
@@ -23,15 +28,17 @@
 
 .card--bottom {
   padding: 6% 5%;
+  background-color: #f9f9f9;
   text-align: justify;
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
 }
 .card__title {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
   font-size: 1.3rem;
   margin: 0;
@@ -47,33 +54,35 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1249px) {
- .card {
-   flex-direction: row;
-   max-width: 650px;
- }
- .card--top {
-   border-radius: 8px 0 0 8px;
-   padding: 1%;
- }
- .card--bottom {
-   width: 66%;
-   border-radius: 0 8px 8px 0;
-   height: 100%;
- }
- .card__title {
-   text-align: left;
- }
- .card--top img {
-   width: 100%;
-   object-fit: contain;
-   box-shadow: none;
- }
+  .card {
+    flex-direction: row;
+    max-width: 650px;
+    margin-bottom: 5%;
+  }
+  .card--top {
+    border-radius: 8px 0 0 8px;
+    padding: 1%;
+  }
+  .card--bottom {
+    width: 66%;
+    border-radius: 0 8px 8px 0;
+    height: 100%;
+  }
+  .card__title {
+    text-align: left;
+  }
+  .card--top img {
+    width: 100%;
+    object-fit: contain;
+    box-shadow: none;
+  }
 }
 
 @media screen and (min-width: 1250px) {
   .card {
     height: 555px;
     margin-left: 2%;
+    margin-bottom: 5%;
   }
   .card--top {
     height: 260px;
