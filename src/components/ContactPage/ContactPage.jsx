@@ -60,8 +60,8 @@ const ContactPage = () => {
             >
               <img
                 className="instagram-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588104710/Portfolio/Instagram-icon.png"
-                alt="instagram icon"
+                src="https://res.cloudinary.com/kboyle/image/upload/c_scale,w_350/v1588104710/Portfolio/ig-icon.png"
+                alt=""
               />
             </a>
           </li>
@@ -74,8 +74,8 @@ const ContactPage = () => {
             >
               <img
                 className="linkedin-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588104717/Portfolio/linkedin-icon.png"
-                alt="linkedIn icon"
+                src="https://res.cloudinary.com/kboyle/image/upload/v1588104717/Portfolio/lnkdn-icon.png"
+                alt=""
               />
             </a>
           </li>

@@ -8,9 +8,35 @@
   display: flex;
   justify-content: space-between;
 }
+.footer__toast {
+  position: absolute;
+  bottom: 35px;
+  right: 3%;
+  color: white;
+  padding: 1%;
+  background-color: #3b3b3b;
+  border-radius: 8px;
+  animation: fade-in .2s linear;
+}
+.copy-icon {
+  height: 15px;
+  width: 15px;
+  filter: invert(.7);
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .footer__section {
   padding: 0 2% 1%;
   font-weight: bold;
+}
+.footer__section button:hover {
+  cursor: pointer;
 }
 address {
   font-style: normal;
