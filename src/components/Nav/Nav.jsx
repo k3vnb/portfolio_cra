@@ -36,7 +36,7 @@ const Nav = () => {
         >
           <img
             className="logo"
-            src="https://res.cloudinary.com/kboyle/image/upload/v1587593766/Portfolio/logo.png"
+            src="https://res.cloudinary.com/kboyle/image/upload/c_scale,w_142/v1588983133/Portfolio/logo_compressed.png"
             alt="Kevin Boyle"
             title="Back to Top"
           />

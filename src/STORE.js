@@ -6,12 +6,12 @@ export const galleryList = [
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059373/Portfolio/SpaceBlahs.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588982594/Portfolio/SpaceBlahs_compressed.png",
     imageTitle: "Space Blahs",
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059370/Portfolio/mindblown.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588984088/Portfolio/mindblown_compressed.png",
     imageTitle: "Self Portrait",
   },
   {
@@ -26,12 +26,12 @@ export const galleryList = [
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059373/Portfolio/LostInSpace.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588983394/Portfolio/LostInSpace_compressed.png",
     imageTitle: "Lost In Space",
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588059372/Portfolio/DigitalWatercolor.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588983484/Portfolio/DigitalWatercolor_compressed.png",
     imageTitle: "Digital Watercolor",
   },
 ];
@@ -44,7 +44,7 @@ export const projectsData = [
     techStack:
       "A fullstack web app. This project utilizes the PERN stack (Postgres, Express, React, Node), Google OAuth & Places API, Material-UI, etc.",
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_65,w_348/v1588057214/Portfolio/NomsPDX.png",
+      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_319/v1588983316/Portfolio/NomsPDX_compressed.png",
     webpageURL: "https://nomspdx.com/",
     githubURL: "https://github.com/lemurriot/nom_client",
   },
@@ -54,7 +54,7 @@ export const projectsData = [
     techStack:
       "Client-side jQuery produced page pulling real-time API information. The background image, for example, is automatically generated from a keyword in the day's weather forecast.",
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_35,w_375/v1588057465/Portfolio/PDXDashboard.png",
+      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_301/v1588982461/Portfolio/PDXDashboard_compressed.png",
     webpageURL: "https://lemurriot.github.io/pdx_dashboard/",
     githubURL: "https://github.com/lemurriot/pdx_dashboard",
   },
@@ -65,7 +65,7 @@ export const projectsData = [
     techStack:
       "Client-side React app w/ custom Webpack build, CSS animations, & local storage persistence.  This app is currently being updated to contain full stack capabilities.",
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_47,w_365/v1588057480/Portfolio/sieve-jobs1.png",
+      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_307/v1588984161/Portfolio/sieve-jobs1_compressed.png",
     webpageURL: "https://sieve-jobs.herokuapp.com/",
     githubURL: "https://github.com/lemurriot/Sieve_Jobs",
   },

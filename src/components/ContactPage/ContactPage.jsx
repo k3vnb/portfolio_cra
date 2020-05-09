@@ -32,7 +32,7 @@ const ContactPage = () => {
             >
               <img
                 className="gmail-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588104702/Portfolio/gmail-icon.png"
+                src="https://res.cloudinary.com/kboyle/image/upload/v1588983016/Portfolio/gmail-icon_compressed.png"
                 alt="gmail icon"
               />
             </a>

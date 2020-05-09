@@ -4,7 +4,7 @@
   z-index: 4;
 }
 .header-page__wallpaper {
-  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg), url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_2291/v1587537580/Portfolio/sky-bg.jpg);
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg), url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_583/v1588984244/Portfolio/sky-bg_compressed.jpg);
   background-repeat: repeat-y;
   background-size: cover, 25%;
   background-position: bottom, 50% 50%;
@@ -12,7 +12,7 @@
   top: -525px;
 }
 .header-page__background-tiles {
-  background-image: url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_2291/v1587537580/Portfolio/sky-bg.jpg);
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_583/v1588984244/Portfolio/sky-bg_compressed.jpg);
   background-size: 25%;
   background-position: 50% 50%;
   position: absolute;
@@ -20,7 +20,7 @@
   left: 0%;
 }
 .header-page__background-img {
-  background-image: url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_2291/v1587537580/Portfolio/sky-bg.jpg);
+  background-image: url(https://res.cloudinary.com/kboyle/image/upload/c_scale,w_583/v1588984244/Portfolio/sky-bg_compressed.jpg);
   background-size: 10%;
   background-position: center;
   opacity: 0.1;
