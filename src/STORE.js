@@ -6,7 +6,7 @@ export const galleryList = [
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588982594/Portfolio/SpaceBlahs_compressed.png",
+      "https://res.cloudinary.com/kboyle/image/upload/v1588987532/Portfolio/SpaceBlahs_compressed__.jpg",
     imageTitle: "Space Blahs",
   },
   {
@@ -31,7 +31,7 @@ export const galleryList = [
   },
   {
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/v1588983484/Portfolio/DigitalWatercolor_compressed.png",
+      "https://res.cloudinary.com/kboyle/image/upload/q_74/v1588995925/Portfolio/DigitalWatercolor_compressed___.jpg",
     imageTitle: "Digital Watercolor",
   },
 ];
@@ -42,21 +42,32 @@ export const projectsData = [
     description:
       "What's the best burger in Portland? Best Sushi? Best Pizza? This web app let's users vote and comment on their favorite food places in Portland.",
     techStack:
-      "A fullstack web app. This project utilizes the PERN stack (Postgres, Express, React, Node), Google OAuth & Places API, Material-UI, etc.",
+      "A fullstack web app. This project utilizes the PERN stack (Postgres, Express, React, Node), Google OAuth2.0 & Places API, Material-UI, etc.",
     imageURL:
       "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_319/v1588983316/Portfolio/NomsPDX_compressed.png",
     webpageURL: "https://nomspdx.com/",
     githubURL: "https://github.com/lemurriot/nom_client",
   },
+  // {
+  //   title: "PDX Dashboard",
+  //   description: "News, Events, and Information for Portland, OR.",
+  //   techStack:
+  //     "Client-side jQuery produced page pulling real-time API information. The background image, for example, is automatically generated from a keyword in the day's weather forecast.",
+  //   imageURL:
+  //     "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_44,w_291/v1588996258/Portfolio/PDXDashboard_compressed___.jpg",
+  //   webpageURL: "https://lemurriot.github.io/pdx_dashboard/",
+  //   githubURL: "https://github.com/lemurriot/pdx_dashboard",
+  // },
   {
-    title: "PDX Dashboard",
-    description: "News, Events, and Information for Portland, OR.",
+    title: "Stocktwit Viewer",
+    description:
+      "Add companies to your watchlist to see tweets from the Stocktwits API.",
     techStack:
-      "Client-side jQuery produced page pulling real-time API information. The background image, for example, is automatically generated from a keyword in the day's weather forecast.",
+      "React with state management via the Context API, with an Express server. Material-UI and custom designs. Page automatically updates watchlist.",
     imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_301/v1588982461/Portfolio/PDXDashboard_compressed.png",
-    webpageURL: "https://lemurriot.github.io/pdx_dashboard/",
-    githubURL: "https://github.com/lemurriot/pdx_dashboard",
+      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_307/v1590284306/Portfolio/StocktwitsViewer_compressed.jpg",
+    webpageURL: "https://stocktwits-viewer.now.sh",
+    githubURL: "https://github.com/lemurriot/stocktwits-viewer--client",
   },
   {
     title: "Sieve Jobs",
