@@ -1,4 +1,8 @@
 import React, { useRef, useEffect, useContext } from "react";
+import githubIcon from "./img/github-icon.png";
+import gmailIcon from "./img/gmail-icon.png";
+import igIcon from "./img/ig-icon.png";
+import linkedInIcon from "./img/lnkdn-icon.png";
 import AppContext from "../../AppContext";
 import ContactBanner from "../ContactBanner/ContactBanner";
 import "./ContactPage.css";
@@ -32,7 +36,7 @@ const ContactPage = () => {
             >
               <img
                 className="gmail-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588983016/Portfolio/gmail-icon_compressed.png"
+                src={gmailIcon}
                 alt="gmail icon"
               />
             </a>
@@ -46,7 +50,7 @@ const ContactPage = () => {
             >
               <img
                 className="github-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588104685/Portfolio/github-icon.png"
+                src={githubIcon}
                 alt="github icon"
               />
             </a>
@@ -58,11 +62,7 @@ const ContactPage = () => {
               rel="noopener noreferrer"
               title="Go to Kevin's Instagram"
             >
-              <img
-                className="instagram-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/c_scale,w_350/v1588104710/Portfolio/ig-icon.png"
-                alt=""
-              />
+              <img className="instagram-icon icon" src={igIcon} alt="" />
             </a>
           </li>
           <li className="contact-page__box contact-page__box--bottom-right">
@@ -72,17 +72,13 @@ const ContactPage = () => {
               rel="noopener noreferrer"
               title="Go to Kevin's LinkedIn"
             >
-              <img
-                className="linkedin-icon icon"
-                src="https://res.cloudinary.com/kboyle/image/upload/v1588104717/Portfolio/lnkdn-icon.png"
-                alt=""
-              />
+              <img className="linkedin-icon icon" src={linkedInIcon} alt="" />
             </a>
           </li>
         </ul>
       </section>
     </>
   );
-}
+};
 
 export default ContactPage;
