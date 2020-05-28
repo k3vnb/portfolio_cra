@@ -1,12 +1,13 @@
 .card {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
   display: flex;
   flex-direction: column;
   border: 0.5px solid #afafaf;
   border-radius: 8px;
   width: 90vw;
   max-width: 370px;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
+  transition: box-shadow .2s linear;
 }
 .card--top {
   background: rgb(0, 255, 255);
@@ -57,7 +58,7 @@
   .card {
     flex-direction: row;
     max-width: 650px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
   .card--top {
     border-radius: 8px 0 0 8px;

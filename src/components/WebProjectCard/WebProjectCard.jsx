@@ -15,7 +15,6 @@ const WebProjectCard = ({
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const cardRef = useRef(null);
 
-  // get position of searchbar to anchor flyout menu absolute position
   useEffect(() => {
     if (cardRef.current) {
       setCardPosition({
@@ -44,17 +43,23 @@ const WebProjectCard = ({
       window.addEventListener("resize", updatePosition);
     };
   }, []);
-  const cardIsApproachingMiddleOfScreen = Math.abs(
+  const cardYPositionIsCenter = Math.abs(
     cardPosition.top - cardPosition.height / 2 - windowHeight / 2
   );
-  const scale =
-    windowWidth < 1250 ? 1 - cardIsApproachingMiddleOfScreen / 5000 : 1;
+  const cardIsNearCenter = windowWidth < 1250 && cardYPositionIsCenter < 100;
+  const scale = windowWidth < 1250 ? 1 - cardYPositionIsCenter / 35000 : 1;
+  const boxShadow = cardIsNearCenter
+    ? "0 12px 22px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.15)"
+    : "0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)";
 
   return (
     <article
       ref={cardRef}
       className="card"
-      style={{ transform: `scale(${scale})` }}
+      style={{
+        transform: `scale(${scale})`,
+        boxShadow,
+      }}
     >
       <div className="card--top">
         <img src={imageURL} alt={title} />
