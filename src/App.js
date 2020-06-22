@@ -39,6 +39,11 @@ const App = () => {
   useEffect(() => {
     const handleLoad = () => setLoadingState(false);
     window.addEventListener("load", handleLoad);
+    // eslint-disable-next-line no-console
+    console.log(
+      "%c Thanks for checking out out my code. You can find the repository for this page at https://www.github.com/lemurriot/portfolio_cra",
+      'color: orange; font-weight: bold; font-size: 18px; font-family: "Courier New", Courier, monospace;'
+    );
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
