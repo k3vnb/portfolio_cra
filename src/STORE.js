@@ -48,16 +48,17 @@ export const projectsData = [
     webpageURL: "https://nomspdx.com/",
     githubURL: "https://github.com/lemurriot/nom_client",
   },
-  // {
-  //   title: "PDX Dashboard",
-  //   description: "News, Events, and Information for Portland, OR.",
-  //   techStack:
-  //     "Client-side jQuery produced page pulling real-time API information. The background image, for example, is automatically generated from a keyword in the day's weather forecast.",
-  //   imageURL:
-  //     "https://res.cloudinary.com/kboyle/image/upload/c_scale,q_44,w_291/v1588996258/Portfolio/PDXDashboard_compressed___.jpg",
-  //   webpageURL: "https://lemurriot.github.io/pdx_dashboard/",
-  //   githubURL: "https://github.com/lemurriot/pdx_dashboard",
-  // },
+  {
+    title: "Dharmic Astrology",
+    description:
+      "Commercial site for astrology services with e-commerce & blog functionality.",
+    techStack:
+      "GatsbyJS, React, GraphQL, with Strapi (a Node-based headless CMS) backend. Stripe API, and Sendgrid email hooks.",
+    imageURL:
+      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_319/v1596763480/Portfolio/dharmicastrology_scrnshot.jpg",
+    webpageURL: "https://www.dharmicastrology.com",
+    githubURL: "https://github.com/lemurriot/dharmic_gatsby",
+  },
   {
     title: "Stocktwit Viewer",
     description:
@@ -69,15 +70,15 @@ export const projectsData = [
     webpageURL: "https://stocktwits-viewer.now.sh",
     githubURL: "https://github.com/lemurriot/stocktwits-viewer--client",
   },
-  {
-    title: "Sieve Jobs",
-    description:
-      "This job interview preparation flash-card app sends users common job interview questions. Users can type in replies, get hints and tips.",
-    techStack:
-      "Client-side React app w/ custom Webpack build, CSS animations, & local storage persistence.  This app is currently being updated to contain full stack capabilities.",
-    imageURL:
-      "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_307/v1588984161/Portfolio/sieve-jobs1_compressed.png",
-    webpageURL: "https://sieve-jobs.herokuapp.com/",
-    githubURL: "https://github.com/lemurriot/Sieve_Jobs",
-  },
+  // {
+  //   title: "Sieve Jobs",
+  //   description:
+  //     "This job interview preparation flash-card app sends users common job interview questions. Users can type in replies, get hints and tips.",
+  //   techStack:
+  //     "Client-side React app w/ custom Webpack build, CSS animations, & local storage persistence.  This app is currently being updated to contain full stack capabilities.",
+  //   imageURL:
+  //     "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_307/v1588984161/Portfolio/sieve-jobs1_compressed.png",
+  //   webpageURL: "https://sieve-jobs.herokuapp.com/",
+  //   githubURL: "https://github.com/lemurriot/Sieve_Jobs",
+  // },
 ];

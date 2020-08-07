@@ -13,6 +13,8 @@ const skillsList = [
   "SVG Illustration (Adobe CC)",
   "jQuery",
   "MVC Design",
+  "GraphQL",
+  "Gatsby",
   "PostgreSQL",
   "API Integration",
   "Jest/Mocha",
