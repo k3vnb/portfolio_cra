@@ -11,16 +11,18 @@ const WebProjectCard = ({
   githubURL,
 }) => {
   const [showImg, setShowImg] = useState(false);
+
   // Thumbnail imgs are loaded asyncronously to improve performance metrics
   useEffect(() => {
     const onScroll = () => !showImg && setShowImg(true);
     document.addEventListener("scroll", onScroll);
     return () => document.removeEventListener("scroll", onScroll);
   }, [showImg]);
+
   return (
     <article className="card">
       <div className="card--top">
-        {showImg && <img src={imageURL} alt={title} />}
+        {showImg && <img className="card--thumbnail" src={imageURL} alt={title} />}
       </div>
       <div className="card--bottom">
         <h4 className="card__title">{title}</h4>
