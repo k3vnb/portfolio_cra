@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArtCard from "../ArtCard/ArtCard";
 import LightBox from "../LightBox/LightBox";
-import { galleryList } from "../../STORE";
+import { GALLERY_LIST } from "./constants";
 import "./ArtGallery.css";
 
 const ArtGallery = () => {
@@ -14,7 +14,7 @@ const ArtGallery = () => {
   };
   const handleClickNext = () => {
     let currentIndex = selectedImageIndex;
-    if (currentIndex < galleryList.length - 1) {
+    if (currentIndex < GALLERY_LIST.length - 1) {
       currentIndex += 1;
       setSelectedImageIndex(currentIndex);
     } else {
@@ -26,7 +26,7 @@ const ArtGallery = () => {
       <div className="illustration-gallery__overlay">
         <h3 className="illustration-gallery__title">Sample &nbsp;Illustrations</h3>
         <div className="illustration-gallery__card-container">
-          {galleryList.slice(0, 4).map(({ imageURL, imageTitle }, i) => (
+          {GALLERY_LIST.slice(0, 4).map(({ imageURL, imageTitle }, i) => (
             <ArtCard
               key={imageTitle}
               id={i}
@@ -38,7 +38,7 @@ const ArtGallery = () => {
         </div>
         {showLightBox && (
           <LightBox
-            imageData={galleryList[selectedImageIndex]}
+            imageData={GALLERY_LIST[selectedImageIndex]}
             toggleShowLightBox={toggleShowLightBox}
             onClickNext={handleClickNext}
           />
