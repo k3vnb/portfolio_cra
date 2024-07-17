@@ -1,16 +1,15 @@
 .illustration-gallery {
-  width: 92%;
-  margin: auto;
+  width: 96%;
+  margin: 15vh auto 20vh;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: white;
   background-image: url(https://res.cloudinary.com/kboyle/image/upload/v1587537963/Portfolio/body-bg.svg);
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 3px;
-  margin-bottom: 25vh;
   border: 2px solid #00000078;
 }
 .illustration-gallery__overlay {
-  padding: 1% 1% 5%;
+  padding: 2% 1% 4%;
   height: 100%;
   width: 100%;
   background: linear-gradient(
