@@ -19,7 +19,7 @@ export const PROJECT_LIST = [
     imageURL:
       "https://res.cloudinary.com/kboyle/image/upload/c_scale,w_319/v1588983316/Portfolio/NomsPDX_compressed.png",
     webpageURL: "https://nomspdx.com/",
-    githubURL: "https://github.com/lemurriot/nom_client",
+    githubURL: "https://github.com/k3vnb/nom_client",
   },
   {
     title: "Wully Willy",

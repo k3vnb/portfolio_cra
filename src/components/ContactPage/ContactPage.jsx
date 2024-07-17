@@ -43,7 +43,7 @@ const ContactPage = () => {
           </li>
           <li className="contact-page__box contact-page__box--top-right">
             <a
-              href="http://www.github.com/lemurriot"
+              href="http://www.github.com/k3vnb"
               target="_blank"
               rel="noopener noreferrer"
               title="Go to Kevin's Github"
